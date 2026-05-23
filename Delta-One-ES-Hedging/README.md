@@ -1,73 +1,10 @@
-<<<<<<< HEAD
-# Delta Hedging Simulation
+### 2. Delta-One ES Hedging
 
-Python project simulating a dynamic delta-hedging strategy for a vanilla European call option using the Black-Scholes framework.
+Simulation of a delta-one trading position hedged using Expected Shortfall (ES) under Basel III conventions.  
+The project models how a flow trader manages tail risk by dynamically hedging a $1M delta-one position, while tracking daily PnL stability and hedge effectiveness under volatile market conditions.
 
-## Objective
-
-The goal of this project is to:
-
-- Simulate daily rebalancing of a delta-hedged option position
-- Track option price evolution and hedge adjustments
-- Compute daily PnL attribution
-- Analyze hedging effectiveness and risk exposures
-
-## Model Features
-
-- Black-Scholes option pricing
-- Dynamic delta hedging
-- Monte Carlo stock path simulation
-- Daily PnL computation
-- Greeks calculation:
-  - Delta
-  - Gamma
-  - Vega
-
-## Technologies Used
-
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-
-## Project Structure
-
-text
-delta-hedging-simulation/
-│
-├── delta_hedging.py
-├── README.md
-├── requirements.txt
-└── results/
-
-## Example Outputs
-
-The simulation generates:
-
-- Daily stock prices
-- Option values
-- Hedge rebalancing amounts
-- PnL evolution
-- Cumulative PnL plots
-
-## Future Improvements
-
-Possible extensions:
-
-- Transaction costs
-- Stochastic volatility
-- Multi-asset hedging
-- Volatility surface modeling
-- Gamma hedging
-
-## Author
-
-Finance student with interest in:
-- Quantitative finance
-- Derivatives pricing
-- Risk management
-- Systematic trading
-=======
-# delta-hedging-simulator
-Dynamic delta hedging simulation for a vanilla equity option using Python and Black-Scholes.
->>>>>>> 9010b2f1b29359cf52a450086407a1dec2538cde
+#### Outputs
+- Expected Shortfall estimation
+- Dynamic hedge positions
+- Daily losses vs ES
+- Cumulative hedged PnL
